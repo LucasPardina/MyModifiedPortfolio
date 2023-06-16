@@ -15,7 +15,8 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ```
 cd existing_repo
-git remote add origin https://gitlab.com/lp_cursos/html_and_css/mymodifiedportfolio.git
+git remote add gitlab https://gitlab.com/lp_cursos/html_and_css/mymodifiedportfolio.git
+git remote add github github https://github.com/LucasPardina/MyModifiedPortfolio.git
 git branch -M main
 git push -uf origin main
 ```
