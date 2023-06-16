@@ -1,0 +1,170 @@
+:root {                     /* root can be used to store custom colors, fonts, sizes, etc. */
+    --white: #ffffff;
+    --dark: #212121;
+    --light_gray: #DFE9F3;
+    --gold_gray: rgba(183,163,136,0.75);
+    --primary_color: #216477;
+    --secondary_color: #FFC107;
+    --tertiary_color: #ff6600;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box; /* Box Model Hack: the  width and height of an element include its content, padding, and border, without adding extra space */
+    min-height: 100vh; 
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px; /* 1 rem = 10 px - Make font size screen adaptable*/
+    font-family: 'Raleway', sans-serif; 
+    background-image: linear-gradient(to top, var(--light_gray) 0%, var(--white) 70%);
+}
+  
+/*   header {
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+  } */
+
+  /* Typography */
+h1 {          
+    color:var(--primary_color);
+    font-size: 4rem;
+    font-weight: 550;
+    margin: 1rem;
+}
+
+h2 {
+    font-size: 3rem;
+    padding-bottom: 0.7rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 1rem;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;  
+}
+
+.myContainer {
+    max-width: 120rem; /* If screensize has those px available it will use that width, otherwise it will use 100% of the available width (because of div's default) */
+    margin: 0 auto;
+}
+
+.button {
+    background-color: var(--primary_color);
+    color: var(--white);
+    padding: 1rem 3rem 1rem 3rem;
+    margin-top: 1rem;
+    text-decoration: none; /* No underline */
+    font-size: 2rem;
+    font-weight: 550;
+    border-radius: .5rem; /* Round corners */
+    width: 60%;
+    text-align: center;
+    border: none;
+}
+@media (min-width: 480px)
+{
+    .button {
+        width:auto;
+    }
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: var(--secondary_color);
+    color: var(--dark);
+}
+
+.nav-bg {                                       /* Principal Navigation Area */
+    background-color: var(--primary_color);     /* By surrounding the nav area with a div which is nav-bg, it is possible to control the background seperately form the nav area's content*/
+}                                               /* Therefore only the text will be centered because of "myContainer", not the whole area*/
+
+.Principal_Nav {
+    display: flex;
+    flex-direction: column; /* if width < 768 px => column */
+    align-items: center; /* This will center items on a column */
+    
+}
+
+@media (min-width: 768px) {
+    .Principal_Nav {
+        flex-direction: row; /*change to row (default) if width == 768px or more*/
+        justify-content: space-between; /* This will center items on a row */
+    }
+}
+
+.Principal_Nav a {
+    /*display: block;     /* this is an alternative to display:column , */
+    /*text-align: center; /* align-items: center */
+    color: var(--white);
+    text-decoration: none; /* remove default underline */
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem; 
+}
+
+.Principal_Nav a:hover {
+    background-color: var(--secondary_color);
+    color: var(--dark);
+}
+
+.Principal_Nav a:focus {
+    background-color: var(--secondary_color);
+    color: var(--dark);
+}
+
+.shadow {
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.54); 
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: var(--white);
+}
+
+.reviews-container {
+    display: flex;
+    flex-direction: column; /* Stack the child elements vertically */
+    justify-content: center;
+}
+
+.review {
+    display: grid;
+    grid-template-columns: 15% 65% 20%;
+    column-gap: 1rem;
+    margin: 1rem;
+    background-color: var(--gold_gray);
+    border-radius: .5rem; /* Round corners */
+    align-items: center;
+}
+
+.review p{
+    background-color: var(--white);
+    border-radius: .5rem; /* Round corners */
+    height: auto;
+    width: auto;
+    min-height: 6rem;
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+.review .button {
+    min-height: 6rem;
+    max-height: 6rem;
+    max-width: 20rem;
+    margin: 1rem 0rem 1rem 0rem;
+    padding: 0rem;
+}
+  

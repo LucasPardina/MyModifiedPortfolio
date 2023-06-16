@@ -1,0 +1,20 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "Web Developer Porfolio proyect. Used as a first example proyect in order to learn web dev.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build": "npm install"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}

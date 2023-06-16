@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio</title>
+    <link rel="stylesheet" href="css/normalize.css"> <!-- The normalize library will help the website to look the desired way regardless of the user's web browser -->
+    <link rel="preload" href="css/style.css" as="style" /> <!-- Use this line to load stylesheet faster => Increase web page performance -->
+    <link href="css/style.css" rel="stylesheet"/> <!-- rel = relation with current document-->
+    <!-- Add external fonts from google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <!-- Other -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500&display=swap" rel="stylesheet">
+    <!-- Including too many external fonts will increase the web page's loading time -->
+</head>
+<body>
+    <header>                                <!-- You may only use one header area and one main content area. Using multiple sections is fine-->
+        <h1 class="myTitle">Lucas Pardina <span>Trainee</span></h1>           <!-- You may declare only one H1 title-->
+    </header>
+
+    <div class="nav-bg">
+        <nav class="myContainer Principal_Nav">                                   <!--Navigation area-->
+            <a href="myProyects.html">Mis Proyectos</a> <!--anchor elements require the href="link" atribute-->
+            <a href="sobreMi.html">Sobre Mi</a>            <!-- href="#" means I don´t have the link yet-->
+            <a href="reviews.html">Reseñas</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h2 class="myTitle2">Aspirante a Desarrollador Web Full Stack</h2> <!-- You may use multiple H2 titles -->
+            <div class="my_location">
+                <!-- Location Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="50" height="50" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFD700" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="12" cy="11" r="3" />
+                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                </svg>
+                <!-- Location Icon -->
+                <p>Córdoba, Argentina</p>
+            </div>
+            <a class="button" href="#">Ver mi perfil en GitLab</a> <!-- If there is only one link you need not use a navigation area-->
+        </div> <!-- hero-content -->
+    </section><!-- hero -->
+
+    <main class="myContainer shadow">
+        <h3>Mis Aptitudes</h3>                
+        <div class="myServices">
+            <section class="myService">
+                <div class = "myIcons">
+                    <!-- Web Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-browser" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFD700" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="4" y="4" width="16" height="16" rx="1" />
+                        <line x1="4" y1="8" x2="20" y2="8" />
+                        <line x1="8" y1="4" x2="8" y2="8" />
+                    </svg>
+                    <!-- Web Icon -->
+                </div><!-- .myIcons -->
+                <h3>Diseño/Desarrollo Web</h3>
+                <p>Phasellus eget tristique turpis. Donec nec nulla malesuada nisl 
+                    euismod tempus. Vestibulum finibus cursus nibh, sed dictum quam 
+                    elementum vitae. Nullam at metus metus. Suspendisse pellentesque .</p>
+            </section>
+            
+            <section class="myService">
+                <div class = "myIcons">
+                    <!-- Phone-Android-IOS Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-android" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFD700" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="4" y1="10" x2="4" y2="16" />
+                        <line x1="20" y1="10" x2="20" y2="16" />
+                        <path d="M7 9h10v8a1 1 0 0 1 -1 1h-8a1 1 0 0 1 -1 -1v-8a5 5 0 0 1 10 0" />
+                        <line x1="8" y1="3" x2="9" y2="5" />
+                        <line x1="16" y1="3" x2="15" y2="5" />
+                        <line x1="9" y1="18" x2="9" y2="21" />
+                        <line x1="15" y1="18" x2="15" y2="21" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-mobile" width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFD700" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="7" y="4" width="10" height="16" rx="1" />
+                        <line x1="11" y1="5" x2="13" y2="5" />
+                        <line x1="12" y1="17" x2="12" y2="17.01" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-apple" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFD700" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M9 7c-3 0 -4 3 -4 5.5c0 3 2 7.5 4 7.5c1.088 -.046 1.679 -.5 3 -.5c1.312 0 1.5 .5 3 .5s4 -3 4 -5c-.028 -.01 -2.472 -.403 -2.5 -3c-.019 -2.17 2.416 -2.954 2.5 -3c-1.023 -1.492 -2.951 -1.963 -3.5 -2c-1.433 -.111 -2.83 1 -3.5 1c-.68 0 -1.9 -1 -3 -1z" />
+                        <path d="M12 4a2 2 0 0 0 2 -2a2 2 0 0 0 -2 2" />
+                    </svg>
+                    <!-- Phone-Android-IOS Icon -->
+                </div> <!-- .myIcons -->
+                <h3>Diseño de Aplicaciones Móbiles</h3>
+                <p>Phasellus eget tristique turpis. Donec nec nulla malesuada nisl 
+                    euismod tempus. Vestibulum finibus cursus nibh, sed dictum quam 
+                    elementum vitae. Nullam at metus metus. Suspendisse pellentesque .</p>
+            </section>
+
+            <section class="myService">
+                <div class = "myIcons">
+                <!-- e-commerce Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-credit-card" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFD700" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="3" y="5" width="18" height="14" rx="3" />
+                        <line x1="3" y1="10" x2="21" y2="10" />
+                        <line x1="7" y1="15" x2="7.01" y2="15" />
+                        <line x1="11" y1="15" x2="13" y2="15" />
+                    </svg>
+                    <!-- e-commerce Icon -->
+                </div><!-- .myIcons -->
+                <h3>E-Commerce</h3>
+                <p>Phasellus eget tristique turpis. Donec nec nulla malesuada nisl 
+                    euismod tempus. Vestibulum finibus cursus nibh, sed dictum quam 
+                    elementum vitae. Nullam at metus metus. Suspendisse pellentesque .</p>
+            </section>
+        </div> <!-- .myServices -->
+    
+        <section>
+            <h4>¿Te gusta mi trabajo?</h4>
+            <form class="myForm" id="reviewForm">
+                <fieldset>
+                  <div class="center-legend">
+                    <legend class="myLegend">Escribe una reseña!</legend>
+                  </div><!-- .center-legend -->
+                  <div class="field-container">
+                    <div class="myField">
+                      <label>Name</label>
+                      <input class="input-text" type="text" name="name" placeholder="Your name" />
+                    </div><!-- .myField -->
+              
+                    <div class="myField">
+                      <label>Phone number</label>
+                      <input class="input-text" type="tel" name="phone" placeholder="Your phone number" />
+                    </div><!-- .myField -->
+              
+                    <div class="myField">
+                      <label>E-mail Address</label>
+                      <input class="input-text" type="email" name="email" placeholder="Your e-mail address" />
+                    </div><!-- .myField -->
+              
+                    <div class="myField">
+                      <label>Message</label>
+                      <textarea class="input-text" name="message" placeholder="Write me a message"></textarea>
+                    </div><!-- .myField -->
+              
+                  </div><!-- .field-container -->
+              
+                  <div class="align-right flex">
+                    <input class="w-small-100 button no_margin" type="submit" value="Enviar" />
+                  </div>
+                </fieldset>
+              </form><!-- .myFrom -->              
+        </section>
+    </main><!-- myContainer shadow -->
+    
+    <footer class="footer">
+        <p>All rights reseved</p>
+    </footer><!-- .footer -->
+    <script>
+      // Generate a random ID for each review
+      function generateId() {
+          return Math.random().toString(36).substr(2, 9);
+      }
+
+      document.getElementById('reviewForm').addEventListener('submit', (event) => {
+          event.preventDefault();
+
+          const formData = new FormData(event.target);
+          const review = {
+              id: generateId(), // Add the ID field to the review object
+              name: formData.get('name'),
+              phone: formData.get('phone'),
+              email: formData.get('email'),
+              message: formData.get('message')
+          };
+
+          fetch('/api/reviews', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(review)
+          })
+              .then((response) => {
+                  if (response.ok) {
+                      alert('Review submitted successfully!');
+                      event.target.reset();
+                  } else {
+                      alert('Failed to submit review.');
+                  }
+              })
+              .catch((error) => {
+                  console.error(error);
+                  alert('An error occurred while submitting the review.');
+              });
+      });
+  </script>
+</body>
+</html>
